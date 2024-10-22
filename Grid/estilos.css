@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white; /*fondoko kolorea txuria*/
+}
+/* Kontenedore generala. GRID-a dagoena */
+.container {
+  color: #666666; /*kontenedorearen kolore grisa*/
+  display: grid; /*GRID-a erabiliko dela esaten da*/
+  font-family: "Lobster", cursive;/* "Lobster" ez badago eskuragarri erabiltzailearen sisteman, "cursive"  alternatib erabiliko da.*/
+  grid-auto-flow: row; /*grid-aren elementua filetan kokatuko dira*/
+  grid-row-gap: 1em; /*filen arteko banaketa 1em-takoa izango da*/
+  grid-template-columns: 10% 30% 30% 30%;/*Define el tamaño y la cantidad de columnas en el grid. En este caso, se establecen cuatro columnas con tamaños del 10%, 30%, 30%, y 30% del ancho total del grid*/
+  grid-template-rows: 100px 400px 300px 100px;/*Define el tamaño y la cantidad de filas en el grid. Se establecen cuatro filas con alturas de 100 píxeles, 400 píxeles, 300 píxeles y 100 píxeles, respectivamente. Esto divide el grid verticalmente en cuatro filas de diferentes alturas.*/
+  margin: 20px auto;/*goiko eta beheko marginak 20pixeletakoak izango dira. ezker-eskuinekoak automatikoki beteko dira zentratuta geratzeko*/
+  width: 90%;/*grid-aren tamaina bere kontenedorearen barnean*/
+}
+
+/* HEADERRA */
+header {
+  border-bottom: 1px solid #666666; /*headerraren beheko aldean marra bat gris kolorekoa*/
+  grid-column: 1 / 5; /*el elemento se extiende desde la columna 1 hasta la columna 5. Esto significa que ocupa todo el ancho del grid en sus cuatro columnas.*/
+  grid-row: 1 / 2;/*el elemento se extiende desde la fila 1 hasta la fila 2. Esto significa que ocupa una única fila del grid en su altura.*/
+  padding: 1em; /*contenidoa eta bordearen arteko tartea*/
+  text-align: center;/*horizontalko nola alineatuko den*/
+}
+
+/* Menua */
+nav {
+  grid-column: 1 / 2; /*el elemento se extiende desde la columna 1 hasta la columna 2. Esto significa que ocupa una única columna en el grid*/
+  grid-row: 2 / 4;/*el elemento se extiende desde la fila 2 hasta la fila 4. Esto significa que ocupa dos filas en el grid, desde la fila 2 hasta la fila 3 y desde la fila 3 hasta la fila 4.*/
+  padding: 1em;/*contenidoa eta bordearen arteko tartea*/
+}
+
+nav div {
+  margin-bottom: 20px; /* beheko margina 20 pixeletakoa*/
+}
+
+/* Imagen grande */
+main {
+  border: 1px solid #aaaaaa; /*bordearen tamainua eta kolorea*/
+  border-radius: 1em;/*ertzearen erradioa*/
+  grid-column: 2 / 4; /*el elemento se extiende desde la columna 2 hasta la columna 4. Esto significa que ocupa dos columnas en el grid*/
+  grid-row: 2 / 3;/*el elemento se extiende desde la fila 2 hasta la fila 3. Esto significa que ocupa una única fila en el grid.*/
+  justify-self: center; /*erdian zentratuko du*/
+  padding: 1em;/*contenidoa eta bordearen arteko tartea*/
+  text-align: center; /*horiontalki zentruan zentratu*/
+  width: 90%;/* zabalera bere kontenedorearen barnean*/
+}
+
+main img {
+  border-radius: 1em;/*ertzearen erradioa*/
+  height: 70%;/* altuera bere kontenedorearen barnean*/
+  width: 80%;/* zabalera bere kontenedorearen barnean*/
+}
+
+/* Resto de imágenes. Colocadas por grid-auto-flow que por defecto es row */
+article {
+  border: 1px solid #aaaaaa;/*ertzearen tamainua eta kolorea*/
+  border-radius: 1em;/*ertzearen erradioa*/
+  padding: 1em;/*contenidoa eta bordearen arteko tartea*/
+  text-align: center;/*horiontalki zentruan zentratu*/
+}
+
+article img {
+  border-radius: 1em;/*ertzearen erradioa*/
+  height: 60%;/* altuera bere kontenedorearen barnean*/
+  width: 100%;/* zabalera bere kontenedorearen barnean*/
+}
+
+article:nth-of-type(2),
+article:nth-of-type(3),
+article:nth-of-type(4) {/*ze ordenetan azalduko diren adieraziko du*/
+  justify-self: end;/*contenidoa eskuineko aldean kokatuko dira*/
+  width: 90%;/* zabalera bere kontenedorearen barnean*/
+}
+
+/* Pie de la página */
+footer {
+  align-items: center;/*os elementos dentro del contenedor se alinearán verticalmente en el centro del contenedor*/
+  border-top: 1px solid #666666;/*ertzearen tamainua eta kolorea*/
+  display: flex; /*flexbox-a erabiliko da footerrean*/
+  grid-column: 1 / 5;/*el elemento se extiende desde la columna 1 hasta la columna 5. Esto significa que ocupa cuatro columnas en el flexbox*/
+  grid-row: 4 / 5;/*el elemento se extiende desde la fila 4 hasta la fila 5. Esto significa que ocupa una única fila en el flexbox.*/
+  justify-content: space-between;
+  padding: 2em;/*contenidoa eta bordearen arteko tartea*/
+}
+
+footer img {
+  width: 50px;/* zabalera bere kontenedorearen barnean*/
+}

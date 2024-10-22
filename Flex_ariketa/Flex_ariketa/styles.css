@@ -1,0 +1,104 @@
+/* Ajustar box-sizing para incluir el borde y padding en el tamaño total */
+* {
+  box-sizing: border-box;
+}
+
+/* Reset de márgenes en títulos y párrafos */
+h1, h4, p {
+  margin-bottom: 1%;
+}
+
+/* Estilos del cuerpo */
+body {
+  background-color: white; /*kolorea jarrita*/
+}
+.container {
+  color: #666666; /*gris ilun kolorea*/
+  font-family: "Lobster", cursive; /* "Lobster" ez badago eskuragarri erabiltzailearen sisteman, "cursive"  alternatib erabiliko da.*/
+  font-weight: bolder; /*letra negrita eran azalduko da*/
+  margin: 20px auto; /*20 pixeletako margina jarriko da*/
+  width: 90%; /*bere kontenedorearen %90 okupatuko du*/
+}
+
+/* Estilos del header */
+header {
+  text-align: center;
+  margin-bottom: 1em; /*beheko aldean espazio bat lagatzen du*/
+  padding: 1em;
+  border-bottom: 1px solid black;
+}
+
+nav {
+  padding: 1em;/*elementuaren barnean 1em-ko zabaleraz betetzen du*/
+  width: 10%; /*kontenedorearen 10% betetzen du*/
+}
+
+nav div {
+  margin-bottom: 20px; /*beheko aldeko margina 20 pixeletakoa izango da*/
+}
+
+/* El elemento principal */
+main {
+  border: 1px solid #aaaaaa;/*ertzaren tamaina eta kolorea*/
+  border-radius: 1em; /*borobildutako ertzak*/
+  height: 400px; /*400 pixeletako altuera*/
+  padding: 1em; /*main barruan 1em beteko du*/
+  text-align: center; /*textua non zentratuta dagoen*/
+  width: 54%;/*zenbat okupatuko duen zabaleraz*/
+}
+
+main img {
+  border-radius: 1em;/*borobildutako ertzak*/
+  height: 70%; /*zenbat okupatuko duen altueraz*/
+  width: 80%;/*zenbat okupatuko duen zabaleraz*/
+}
+
+/* Lehenengo FLEX kontenedorea lehen ilararako */
+.content_wrapper {
+  display: flex; /*flex boxa erabiliko da*/
+  flex-wrap: wrap;/*los elementos secundarios se envolveran automaticamente a la siguiente fila si no caben en el espacio horizontal disponible*/
+  margin-bottom: 1em;/*kontenedorearen behe aldean zenbateko hutsunea lagatzen duen*/
+  justify-content: space-between; /*los elementos secundarios se distribuiran uniformemente a lo largo del eje principal (horizontal) del contenedor, con espacio adicional entre ellos y en los extremos del contenedor*/
+}
+
+.content_wrapper article:nth-of-type(1) {/*artikulo klaseko lehen elementua hartzen du*/
+  height: 400px;/*zenbat okupatuko duen altueraz*/
+}
+
+/* Articulo. Irudi txikiak */
+article {
+  border: 1px solid #aaaaaa; /*bordearen kolorea eta zabalera*/
+  border-radius: 1em;/*borobildutako ertzak*/
+  height: 300px;/*300 pixel hartuko ditu altueran*/
+  padding: 1em; /*article barruan 1emko errellenoa edukiko du*/
+  text-align: center;/*textua non zentratuta dagoen*/
+  width: 32%;/*zenbat okupatuko duen zabaleraz*/
+}
+
+.articles {
+  display: flex; /*articles flexbox bidez erakutsiko da*/
+  justify-content: space-between; /*horizontalki nola banatuko den adieraziko du. bai alboetan zein beraien artean espazioa emango du*/
+  margin-left: 10%;/*El margen izquierdo es del 10% del ancho del elemento padre*/
+}
+
+article img {
+  border-radius: 1em;/*borobildutako ertzak*/
+  height: 60%;/*zenbat okupatuko duen altueraz*/
+  width: 100%;/*zenbat okupatuko duen zabaleraz*/
+}
+
+/* Estilos del footer */
+footer {
+  margin-top: 1em; /*beheko aldean espazio bat lagatzen du*/
+  border-top: 1px solid black;
+  border-radius: 1%;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer img {
+  
+  width: 20%;
+}

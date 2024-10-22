@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h4,
+p {
+  margin: 0px;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  color: #666666; /*kontenedorearen kolore grisa*/
+  display: grid; /*GRID-a erabiliko dela esaten da*/
+  font-family: "Lobster", cursive; /* "Lobster" ez badago eskuragarri erabiltzailearen sisteman, "cursive"  alternatib erabiliko da.*/
+  grid-auto-flow: row; /*grid-aren elementua filetan kokatuko dira*/
+  grid-row-gap: 1em; /*filen arteko banaketa 1em-takoa izango da*/
+  grid-template-columns: 100px 370px 370px 370px 140px; /*Define el tamaño y la cantidad de columnas en el grid. En este caso, se establecen cuatro columnas con tamaños del 10%, 30%, 30%, y 30% del ancho total del grid*/
+  grid-template-rows: 80px 300px 300px 100px; /*Define el tamaño y la cantidad de filas en el grid. Se establecen cuatro filas con alturas de 100 píxeles, 400 píxeles, 300 píxeles y 100 píxeles, respectivamente. Esto divide el grid verticalmente en cuatro filas de diferentes alturas.*/
+  margin: 20px auto; /*goiko eta beheko marginak 20pixeletakoak izango dira. ezker-eskuinekoak automatikoki beteko dira zentratuta geratzeko*/
+  width: 100%; /*grid-aren tamaina bere kontenedorearen barnean*/
+  justify-content: center;
+}
+.content_wrapper {
+  grid-row: 2;
+  grid-column: 1/6;
+  display: grid;
+  grid-template-columns: 10% 26% 26% 26% 12%;
+  grid-template-rows: 75% 25%;
+  
+}
+
+header {
+  grid-row: 1/2;
+  grid-column: 1/6;
+  border-radius:1em;
+  text-align: center;
+  color: white;
+  background-color: rgb(164, 0, 90);
+}
+
+nav {
+  font-size: small;
+  text-align: center;
+  justify-items: center;
+  margin-left:1%;
+  background-color: rgb(237, 157, 220);
+  border-radius: 1em;
+  color: magenta;
+  grid-row: 1/3;
+  grid-column: 1/2;
+  padding: 2em;
+  padding-top: 3em;
+  padding-bottom: 4em; 
+}
+nav img{
+  width: 80px;
+}
+nav div {
+  margin-bottom: 10px;
+  width: 80px;
+}
+.articles {
+  grid-row: 1/3;
+  grid-column:span 3;
+  display: flex;
+  flex-direction: row;
+}
+/* .articles {
+  grid-row: 1/3;
+  grid-column: span 3;
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 1em; 
+}
+ */
+article {
+  border: 1px solid #666666;
+  border-radius: 1em;
+  margin: 10px;
+  padding: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+}
+
+article img {
+  border-radius: 1em;
+  height: 80%;
+  width: 90%;
+}
+.poli {
+  grid-row: 3/4;
+  grid-column: 1/6;
+  padding: 1em;
+  border: 1px solid;
+  border-radius: 1em;
+  text-align: center;
+}
+
+.poli img {
+  width: 80%;
+  height: 60%;
+  border-radius: 1em;
+}
+aside {
+  font-size: small;
+  padding: 0.1em;
+  grid-row: 1/3;
+  grid-column: 5;
+  background-color: rgb(237, 157, 220);
+  color: magenta;
+  border-radius: 1em;
+  justify-self: start;
+}
+ul {
+  width: 40%;
+  padding-left: 10px;
+
+}
+
+footer {
+  background-color: rgb(237, 157, 220);
+  align-items: center; 
+  border-top: 1px solid #666666;
+  display: flex; 
+  grid-column: span 5; 
+  grid-row: 4/5;
+  justify-content: space-between;
+  padding: 1em; 
+}
+
+footer img {
+  width: 25%;
+  border-radius: 1em;
+
+}
