@@ -1,0 +1,265 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-error {
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.btn-error:hover {
+  box-shadow: 0 4px 8px #333333;
+}
+.btn-error:active {
+  background-color: orange;
+  color: white;
+}
+
+.btn-warning {
+  background-color: rgb(239, 241, 120);
+  border: 1px solid rgb(239, 241, 120);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.btn-warning:hover {
+  box-shadow: 0 4px 8px #333333;
+}
+.btn-warning:active {
+  background-color: orange;
+  color: white;
+}
+
+.btn-accepted {
+  background-color: rgb(55, 138, 0);
+  border: 1px solid rgb(55, 138, 0);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.btn-accepted:hover {
+  box-shadow: 0 4px 8px #333333;
+}
+.btn-accepted:active {
+  background-color: orange;
+  color: white;
+}
+
+.btn-normal {
+  background-color: rgb(0, 110, 255);
+  border: 1px solid rgb(0, 110, 255);
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+.btn-normal:hover {
+  box-shadow: 0 4px 8px #333333;
+}
+.btn-normal:active {
+  background-color: orange;
+  color: white;
+}
+
+table {
+  width: 30%;
+  border-collapse: collapse;
+}
+table thead tr th:nth-child(1) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(2) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(3) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(4) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(5) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(6) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(7) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(8) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(9) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table thead tr th:nth-child(10) {
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(1) {
+  background-color: #636363;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(2) {
+  background-color: #b4b4b4;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(3) {
+  background-color: #636363;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(4) {
+  background-color: #b4b4b4;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(5) {
+  background-color: #636363;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(6) {
+  background-color: #b4b4b4;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(7) {
+  background-color: #636363;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(8) {
+  background-color: #b4b4b4;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(9) {
+  background-color: #636363;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+table tbody tr td:nth-child(10) {
+  background-color: #b4b4b4;
+  border: 1px solid #333333;
+  padding: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 20vh;
+  border: 1px solid #333333;
+}
+.row .zut-1 {
+  flex: 12.5%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-1:last-child {
+  border-right: none;
+}
+.row .zut-2 {
+  flex: 25%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-2:last-child {
+  border-right: none;
+}
+.row .zut-3 {
+  flex: 37.5%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-3:last-child {
+  border-right: none;
+}
+.row .zut-4 {
+  flex: 50%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-4:last-child {
+  border-right: none;
+}
+.row .zut-5 {
+  flex: 62.5%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-5:last-child {
+  border-right: none;
+}
+.row .zut-6 {
+  flex: 75%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-6:last-child {
+  border-right: none;
+}
+.row .zut-7 {
+  flex: 87.5%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-7:last-child {
+  border-right: none;
+}
+.row .zut-8 {
+  flex: 100%;
+  border-right: 1px solid #333333;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.row .zut-8:last-child {
+  border-right: none;
+}
+
+/*# sourceMappingURL=ariketa3.css.map */
