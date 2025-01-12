@@ -1,91 +1,178 @@
-$color-background: #FFFFFF;
-$color-base: #333333;
-$color-odd: #636363;
-$color-even: #b4b4b4;
-
-$navbar-background-color: rgb(0, 64, 255);
-$navbar-color-hover: $color-background;
-
-$main-container-width: 80%;
+// Estilos generales
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-image: url("../img/fondo.png");
+}
+
+// Estilo para el header
+#menu {
+  padding: 10px 0;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+
 }
 
-header {
-  width: 100%;
-  background-image: $navbar-background-color;
-  display: grid;
-  grid-template-areas: "logo links";
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 10px 20px;
-}
-
-header .logo {
-  grid-area: logo;
+#menu nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 90%;
 }
 
-header .logo img {
-  max-height: 50px;
+#menu .logo {
+  width: 10%; // Tamaño pequeño del logo
+  height: auto;
 }
 
-header nav {
-  grid-area: links;
+ul {
+  list-style: none;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  gap: 30px; // Espacios entre los enlaces
+  margin-left: auto; // Para que se desplace a la derecha
 }
 
-header nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header nav ul li a {
+ul li a {
   text-decoration: none;
-  color: $navbar-background-color;
-  padding: 10px 15px;
-  transition: background-color 0.3s ease;
+  color: #7a7b7a;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-  background-color: $navbar-color-hover;
-  border-radius: 5px;
+ul li a:hover {
+  color: #74C0FC; // Cambia de color al pasar el ratón por encima
 }
 
-.container {
-  display: grid;
-  grid-template-areas:
-    "content content"
-    "footer footer";
-  gap: 5px;
-  background-color: #2196F3;
-  padding: 5px;
+// Estilo para la sección de aurkezpena
+.aurkezpena {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 20px;
 }
 
-.container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 10px;
+.flex-item1 {
+  flex: 1;
+  padding-right: 20px;
 }
 
-footer {
-  grid-area: footer;
-  width: 100%;
+.flex-item2 {
+  flex: 1;
   text-align: center;
-  padding: 20px;
-  background-color: $color-base;
 }
-img{
-    width: 30%;
-    height: 30%;
+
+.flex-item2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-principal {
+  background-color: #74C0FC;
+  color: #fff;
+  margin-right: 15px;
+  font-weight: bold;
+  border-radius: 5%;
+}
+
+.btn-secundario {
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.btn-principal:hover, .btn-secundario:hover {
+  background-color: #5a98d1;
+}
+
+// Estilos para la sección de servicios
+.zerbitzuak {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.zerbitzu-titulu h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.zerbitzu-titulu p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.zerbitzu-mota {
+  display: flex;
+  justify-content: space-around;
+}
+
+.zerbitzu-mota div {
+  flex: 1;
+  text-align: center;
+}
+
+.zerbitzu-mota i {
+  font-size: 3rem;
+  color: #74C0FC;
+  margin-bottom: 15px;
+}
+
+.zerbitzu-mota h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.zerbitzu-mota p {
+  font-size: 1rem;
+  color: #666;
+}
+
+// Estilo para el footer
+footer {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .logo-foot {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer .footer-edukia {
+  font-size: 0.9rem;
+  color: #333;
 }
