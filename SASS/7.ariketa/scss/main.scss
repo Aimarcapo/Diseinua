@@ -1,0 +1,128 @@
+
+$primary-color: #6f00ff;
+$text-color: #333;
+$background-color: #f4f4f4;
+$card-border-radius: 10px;
+$transition-time: 0.3s;
+$menu-color: #f6ff00;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin hover-effect($color) {
+  transition: background-color $transition-time, color $transition-time;
+  &:hover {
+    background-color: $color;
+    color: #fff;
+  }
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+header {
+  background-color: $primary-color;
+  padding: 1rem 0;
+  @include hover-effect($background-color);
+  nav {
+    @include flex-center;
+    ul {
+      list-style: none;
+      justify-content: space-evenly;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          color: $menu-color;
+          font-weight: bold;
+          font-size: 32px;
+        }
+      }
+    }
+    p{
+      color: rgb(34, 250, 6);
+    }
+  }
+  
+}
+header p{
+  color: red;
+}
+.edukia {
+  text-align: center;
+  padding: 2rem;
+
+  h1 {
+    font-size: 2.5rem;
+    color: $text-color;
+    margin-bottom: 2rem;
+  }
+
+  .elementu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .card {
+      border-radius: $card-border-radius;
+      overflow: hidden;
+      transition: transform $transition-time;
+      &:hover {
+        transform: translateY(-10px);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      figcaption {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin: 1rem 0;
+      }
+
+      p {
+        padding: 0 1rem 1rem;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .botoi {
+    margin-top: 2rem;
+
+    .btn-principal {
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      font-weight: bold;
+      color:$menu-color;
+      background-color: $primary-color;
+      border: none;
+      border-radius: $card-border-radius;
+      cursor: pointer;
+     
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #ddd;
+  font-size: 0.9rem;
+  color: $text-color;
+}

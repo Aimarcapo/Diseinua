@@ -1,3 +1,4 @@
+
 // Estilos generales
 * {
   margin: 0;
@@ -30,7 +31,7 @@ body {
 }
 
 #menu .logo {
-  width: 10%; // Tamaño pequeño del logo
+  width: 100px; // Tamaño pequeño del logo
   height: auto;
 }
 
@@ -38,8 +39,8 @@ ul {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  gap: 30px; // Espacios entre los enlaces
-  margin-left: auto; // Para que se desplace a la derecha
+  gap: 30px; 
+  margin-left: auto;
 }
 
 ul li a {
