@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-image: url("../img/bidaia.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #6f00ff;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 30px solid #6f00ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+header nav {
+  margin-top: 1rem;
+  width: 100%;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+header nav ul li a {
+  transition: background-color 0.3s, color 0.3s;
+  color: #6f00ff;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #f6ff00;
+}
+@media (max-width: 600px) {
+  header {
+    padding: 1rem 0.5rem;
+  }
+  header nav ul {
+    gap: 1rem;
+  }
+}
+
+.edukia {
+  text-align: center;
+  padding: 2rem;
+  flex: 1;
+}
+.edukia h1 {
+  font-size: 2.5rem;
+  color: black;
+  margin-bottom: 2rem;
+}
+.edukia .elementu {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+@media (max-width: 600px) {
+  .edukia .elementu {
+    grid-template-columns: 0.75fr;
+    justify-content: center;
+  }
+}
+.edukia .elementu .card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.edukia .elementu .card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+.edukia .elementu .card figcaption {
+  font-size: 1.25rem;
+  margin: 1rem 0;
+}
+.edukia .elementu .card p {
+  padding: 0 1rem 1rem;
+  color: #6f00ff;
+}
+.edukia .botoi {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.edukia .botoi .btn-principal {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f6ff00;
+  background-color: #6f00ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.edukia .botoi .btn-principal:hover {
+  transform: scale(1.1);
+}
+
+.titulu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+.titulu h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black;
+}
+.titulu p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+}
+@media (max-width: 1440px) {
+  .titulu h3 {
+    font-size: 1.8rem;
+    margin-right: 14rem;
+  }
+  .titulu p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 1024px) {
+  .titulu h3 {
+    font-size: 1.6rem;
+  }
+  .titulu p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .titulu h3 {
+    font-size: 1.4rem;
+  }
+  .titulu p {
+    font-size: 0.75rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #6f00ff;
+  font-size: 3rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  footer p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 1024px) {
+  footer p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 600px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
